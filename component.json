@@ -7,8 +7,9 @@
     "dependencies": {},
     "development": {},
     "license": "MIT",
-    "main": "crossfilter.js",
+    "main": "component_index.js",
     "scripts": [
+        "component_index.js",
         "crossfilter.js"
     ]
 }
