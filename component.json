@@ -9,8 +9,6 @@
     "license": "MIT",
     "main": "index.js",
     "scripts": [
-        "crossfilter.js",
         "index.js"
-
     ]
 }
