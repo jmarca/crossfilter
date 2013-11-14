@@ -1,3 +1,2 @@
-function(exports, require, module){
-    require("./crossfilter");
-    module.exports = crossfilter;
+var crossfilter = require("./crossfilter");
+module.exports = crossfilter;
