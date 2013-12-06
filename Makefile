@@ -1,6 +1,6 @@
 .PHONY: test benchmark
 
-all: crossfilter.min.js
+all: crossfilter.min.js component.json
 
 crossfilter.js: \
 	src/identity.js \
@@ -29,6 +29,11 @@ crossfilter.js: \
 	@echo 'crossfilter.version = "'$(shell node -p 'require("./package.json").version')'";' >> $@
 	cat $(filter %.js,$^) >> $@
 	@echo '})(this);' >> $@
+	@chmod a-w $@
+
+%.json: bin/% package.json
+	@rm -f $@
+	bin/$* > $@
 	@chmod a-w $@
 
 clean:

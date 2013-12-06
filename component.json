@@ -1,15 +1,19 @@
 {
-    "name": "crossfilter",
-    "repo": "jmarca/crossfilter",
-    "description": "crossfilter",
-    "version": "0.0.1",
-    "keywords": [],
-    "dependencies": {},
-    "development": {},
-    "license": "MIT",
-    "main": "component_index.js",
-    "scripts": [
-        "component_index.js",
-        "crossfilter.js"
-    ]
+  "name": "crossfilter",
+  "repo": "square/crossfilter",
+  "description": "Fast multidimensional filtering for coordinated views.",
+  "keywords": [
+    "square",
+    "analytics",
+    "visualization"
+  ],
+  "version": "1.3.5",
+  "main": "index-browserify.js",
+  "scripts": [
+    "crossfilter.js",
+    "index-browserify.js"
+  ],
+  "dependencies": {},
+  "development": {},
+  "license": "Apache License, Version 2.0"
 }
